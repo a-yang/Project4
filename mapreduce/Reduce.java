@@ -33,9 +33,6 @@ public class Reduce extends MapReduceBase implements Reducer<Text, Text, Text, T
 					output.collect(key, new Text(outputValue));
 					break;
 				}
-				else {
-					System.out.println(key.toString() + " is not " + searchCriteria[i]);
-				}
 			}
 		}
 	}
